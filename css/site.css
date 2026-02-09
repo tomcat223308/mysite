@@ -1,0 +1,72 @@
+#header, #content, #footer
+{
+    width:80%;
+	margin:0 auto;	
+	
+    border:1px red solid;
+}
+
+#header
+{
+	background-color:#f2f2f2;
+
+	/*相对定位：https://www.w3school.com.cn/cssref/pr_class_position.asp
+		未设置偏移值，做为子孙元素定位偏移的基准点
+	*/
+	position: relative;	
+}
+#content
+{
+}
+#footer
+{
+	clear:both;	
+	text-align:center;
+}
+#left
+{
+	border:1px red solid;
+	
+	float:left;
+	width:25%;
+}
+#right
+{
+	border:1px red solid;
+	
+	float:right;
+	width:74%;
+}
+
+
+.leftfloat {
+    float:left;
+}
+.rightfloat {
+    float:right;
+}
+
+
+.logindiv {
+	border: 1px solid blue;
+	
+	/*绝对定位*/
+	position: absolute;	
+	/* 根据 #header(position: relative) 的右上角进行偏移 */
+	right:20px;
+	top:20px;
+}
+
+
+/* 图片排列效果 */
+.container {
+	display: flex;	 /* 弹性盒布局 */
+	flex-wrap:wrap;	 /* 当弹性盒子的子元素超出父容器时进行换行 */
+}
+.card {
+	border: 1px solid red;
+}
+.desc {
+	text-align: center;
+}
+
